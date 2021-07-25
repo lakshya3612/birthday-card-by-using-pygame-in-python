@@ -1,0 +1,31 @@
+import pygame
+import time
+pygame.init()
+screen=pygame.display.set_mode((600,600))
+done=False
+image=pygame.image.load("backgroundone.jpg")
+font=pygame.font.SysFont("Italic",70)
+text=font.render("Happy",True,(255,255,0))
+text2=font.render("Birthday",True,(255,255,0))
+screen.fill((255,135,222))
+screen.blit(image,(0,0))
+screen.blit(text,(200,200))
+screen.blit(text2,(250,300))
+pygame.display.update()
+time.sleep(2)
+
+image2=pygame.image.load("backgroundtwo.jpg")
+font2=pygame.font.SysFont("Italic",70)
+text3=font2.render("Wish you a",True,(0,200,0))
+text4=font2.render("very happy birthday",True,(0,200,0))
+screen.fill((255,255,50))
+screen.blit(image2,(0,0))
+screen.blit(text3,(100,150))
+screen.blit(text4,(100,250))
+pygame.display.update()
+time.sleep(4)
+
+image3=pygame.image.load("backgroundthree.jpg")
+screen.fill((255,255,50))
+screen.blit(image3,(0,0))
+pygame.display.update()
